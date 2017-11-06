@@ -15,11 +15,10 @@
 
 		<input type="file" accept="image/jpeg, image/gif, image/x-png">
         <script src="./compress.js" charset="utf-8"></script>
-        <!-- <script src="preview.js" charset="utf-8"></script> -->
         <script type="text/javascript">
             document.querySelector('input').onchange = function () {
-                this.compress({ size: 100, format: 'jpeg' }).then(function (url) {
-                    var img = new Image();
+                this.compress({ size: 100, format: 'jpeg' }).then((url) => {
+                    const img = new Image();
                     img.src = url;
                     document.querySelector('.pic').appendChild(img);
                 });
