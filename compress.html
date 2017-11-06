@@ -18,7 +18,7 @@
         <!-- <script src="preview.js" charset="utf-8"></script> -->
         <script type="text/javascript">
             document.querySelector('input').onchange = function () {
-                this.compress({ size: 600, format: 'jpeg' }).then(function (url) {
+                this.compress({ size: 100, format: 'jpeg' }).then(function (url) {
                     var img = new Image();
                     img.src = url;
                     document.querySelector('.pic').appendChild(img);
