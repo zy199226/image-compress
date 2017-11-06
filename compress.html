@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+    <style media="screen">
+        img{
+            width: 600.222222px;
+        }
+    </style>
+	<body>
+		<div class="pic">
+		</div>
+
+		<input type="file" accept="image/jpeg, image/gif, image/x-png">
+        <script src="./compress.js" charset="utf-8"></script>
+        <!-- <script src="preview.js" charset="utf-8"></script> -->
+        <script type="text/javascript">
+            document.querySelector('input').onchange = function () {
+                this.compress({ size: 600, format: 'jpeg' }).then(function (url) {
+                    var img = new Image();
+                    img.src = url;
+                    document.querySelector('.pic').appendChild(img);
+                });
+            };
+        </script>
+	</body>
+</html>
