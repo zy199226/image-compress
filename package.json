@@ -1,0 +1,17 @@
+{
+  "name": "compress",
+  "description": "这个 js 只对 web 页面的 input 文件输入框的图片进行处理，处理后的图片会被放入 class 名为 pic 的元素内，使用时请注意自行添加存放处理后图片的元素。",
+  "version": "1.0.0",
+  "main": "compress.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zy",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1"
+  }
+}
